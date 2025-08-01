@@ -55,10 +55,15 @@ function LoginPage() {
           />
           {error && <p style={{ color: 'red' }}>{error}</p>}
 
+                    <p className="forgot-password" onClick={() => navigate('/forgot-password')}>
+            Forgot Password?
+          </p>
+        </form>
+
           <div style={{ marginTop: '1rem' }}>
             <button type="submit" className="primary-button">Login</button>
           </div>
-        </form>
+
 
         <div style={{ marginTop: '1rem' }}>
           <button className="primary-button" onClick={() => navigate('/landing')}>Back</button>

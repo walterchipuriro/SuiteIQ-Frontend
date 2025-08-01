@@ -14,31 +14,31 @@
 /* Navbar top-right */
 .navbar {
   position: absolute;
-  top: 10px;
-  right: 50px;
+  top: 18px;
+  right: 70px;
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .navbar button {
   background-color: rgba(255, 255, 255, 0.15);
   color: white;
   border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
+  padding: 9px 20px;
+  border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 20s;
 }
 
 .navbar button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(100, 88, 88, 0.3);
 }
 
 /* Main content */
 .main-content {
-  max-width: 10000px;
-  margin: 100px auto 0 auto;
+  max-width: 10050px;
+  margin: 75px auto 0 auto;
   background-color: rgba(0, 0, 0, 0.5); /* for contrast */
   padding: 30px;
   border-radius: 12px;
@@ -67,7 +67,7 @@
   background-color: #684a00;
   color: white;
   border: none;
-  padding: 10px 18px;
+  padding: 18px 18px;
   border-radius: 6px;
   font-size: 2rem;
   cursor: pointer;

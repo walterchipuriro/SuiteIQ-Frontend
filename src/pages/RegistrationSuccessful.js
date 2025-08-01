@@ -11,10 +11,11 @@ function RegistrationSuccessful() {
 
   return (
   <div className="success-container">
-     <div className="success-box"></div>
+     <div className="success-box">
   <h1>Registration Successful!</h1>
   <p>Your account has been created successfully.</p>
-  <button onClick={handleGoToLogin}>Go to Login</button>
+  <button onClick={handleGoToLogin}>Login</button>
+  </div>
 </div>
 
 

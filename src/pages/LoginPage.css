@@ -1,5 +1,5 @@
 .login-container {
-  background-image: url('../assets/images/reg.jpeg'); /* path confirmed */
+  background-image: url('../assets/images/reg.jpeg'); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -34,13 +34,13 @@
 
 .login-box input {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.4rem;
   margin-bottom: 1.6rem;
   border: none;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
   color: #333;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .login-box input:focus {
@@ -59,11 +59,20 @@
   transition: background 0.3s ease;
   font-size: 1rem;
   display: block;
-  margin: 0 auto;
+  margin:  auto;
 }
 
 .primary-button:hover {
   background: linear-gradient(135deg, #dcb872, #b7925b);
+}
+
+
+.forgot-password {
+  color: #a1a2a3;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 0.9rem;
+  font-size: 1.2rem;
 }
 
 
