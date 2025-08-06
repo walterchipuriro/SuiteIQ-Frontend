@@ -7,11 +7,10 @@ import RegistrationPage from './pages/RegistrationPage';
 import LoginPage from './pages/LoginPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage'; 
 import ResetPasswordPage from './pages/ResetPasswordPage';
-
+import WorkerDashboard from './pages/WorkerDashboard';
 
 function App() {
   return (
-    <>
     <Router>
       <Routes>
         <Route path="/" element={<Welcome />} />
@@ -21,9 +20,12 @@ function App() {
         <Route path="/registration-successful" element={<RegistrationSuccessful />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
+        <Route path="/dashboard" element={<WorkerDashboard />} />
+        {/* <Route path="/workspace" element={<Workspace />} />
+        <Route path="/reports" element={<Reports />} />
+        <Route path="/account" element={<Account />} /> */}
       </Routes>
     </Router>
-    </>
   );
 }
 

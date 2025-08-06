@@ -20,11 +20,10 @@ function LoginPage() {
 
       console.log(response.data);
 
-      // ✅ Store the JWT token for authenticated requests
-      localStorage.setItem("token", response.data.token); // adjust key if needed
+      localStorage.setItem("token", response.data.token); 
 
       console.log('Login successful!');
-      navigate('/dashboard');
+      navigate('/dashboard'); 
     } catch (error) {
       if (error.response && error.response.status === 401) {
         setError('Invalid username or password');
@@ -55,16 +54,17 @@ function LoginPage() {
           />
           {error && <p style={{ color: 'red' }}>{error}</p>}
 
-                    <p className="forgot-password" onClick={() => navigate('/forgot-password')}>
+          <p className="forgot-password" onClick={() => navigate('/forgot-password')}>
             Forgot Password?
           </p>
-        </form>
 
+      
           <div style={{ marginTop: '1rem' }}>
             <button type="submit" className="primary-button">Login</button>
           </div>
+        </form>
 
-
+        {/* Back button OUTSIDE the form is fine */}
         <div style={{ marginTop: '1rem' }}>
           <button className="primary-button" onClick={() => navigate('/landing')}>Back</button>
         </div>
