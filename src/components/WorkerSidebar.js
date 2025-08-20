@@ -1,4 +1,3 @@
-// src/components/WorkerSidebar.js
 import { FaTachometerAlt, FaDoorOpen, FaUser } from "react-icons/fa";
 
 export default function WorkerSidebar() {

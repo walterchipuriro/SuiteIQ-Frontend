@@ -1,7 +1,21 @@
-.workerDashboard-container {
+/* .workerDashboard-container {
   background-image: url('../assets/images/reg.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-family: 'Segoe UI', sans-serif;
+} */
+
+
+
+
+.workerDashboard-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/images/reg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
 }
+
