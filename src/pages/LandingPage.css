@@ -1,0 +1,79 @@
+/* Full background */
+.landing-container {
+    background-image: url('../assets/images/background.jpeg');
+  background-size: 112%;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  padding: 10px;
+}
+
+/* Navbar top-right */
+.navbar {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar button {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.navbar button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main content */
+.main-content {
+  max-width: 10000px;
+  margin: 100px auto 0 auto;
+  background-color: rgba(0, 0, 0, 0.5); /* for contrast */
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.main-content h2 {
+  margin-top: 30px;
+  font-size: 1.8rem;
+}
+
+.main-content p,
+.main-content ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+/* Back button styling */
+.back-button {
+  margin-top: 40px;
+  background-color: #684a00;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}

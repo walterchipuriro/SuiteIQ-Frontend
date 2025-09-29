@@ -1,0 +1,53 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;     
+  
+  text-align: center;
+  height: 70vh;
+  /* background: linear-gradient(to bottom right, #fff5e6, #f3e5f5); */
+  /* font-family: 'Segoe UI', sans-serif;
+  padding: 20px; */
+}
+
+
+.logo {
+  width: 500px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: lab(100% 0.01 -0.01);
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+p {
+  color: lab(100% 0.01 -0.01);
+  margin-top: 20px;
+  font-size: 2.3rem; /* increased from 1.2rem */
+  font-weight: bold;  /* makes the text bold */
+}
+
+
+.button-group {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #684a00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #a87900;
+}
