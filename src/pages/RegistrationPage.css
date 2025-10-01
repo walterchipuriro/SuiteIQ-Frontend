@@ -1,5 +1,5 @@
 .register-container {
-  background-image: url('../assets/images/reg.jpeg'); /* path confirmed */
+  background-image: url('../assets/images/reg.jpeg') !important; /* path confirmed */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -13,23 +13,21 @@
   overflow: hidden;
 }
 
-
 .register-form {
   background: rgba(0, 0, 0, 0.65); /* Elegant glassy black */
-  padding: 2.5rem 3rem;
-  border-radius: 15px;
+  padding: 1rem 2rem;
+  border-radius: 25px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-  width: 475px;
+  width: 750px; /* Wider to accommodate two columns */
   color: #f5f5f5; /* Softer text */
-  backdrop-filter: blur(6px); /* Smooth blur for glass effect */
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px); /* Smooth blur for glass effect */
+  border: 2px solid rgba(255, 255, 255, 0.15);
 }
-
 
 .register-form h1 {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #e4c590; /* Gold-ish tone */
   font-family: 'Georgia', serif;
 }
@@ -38,9 +36,11 @@
   font-weight: 500;
   margin-bottom: 0.5rem;
   color: #e4e4e4;
+  display: block;
 }
 
-.register-form input {
+.register-form input,
+.register-form select {
   width: 100%;
   padding: 0.7rem;
   margin-bottom: 1.2rem;
@@ -48,14 +48,32 @@
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
   color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
-.register-form input:focus {
+.register-form input:focus,
+.register-form select:focus {
   outline: 2px solid #e4c590;
 }
 
+.form-grid {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Buttons */
 .register-form button {
-  width: 70%;
+  width: 45%;
   padding: 0.8rem;
   background: linear-gradient(135deg, #e4c590, #c8a56a);
   border: none;
@@ -64,27 +82,27 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
-  
-  display: block;          /* Make sure it's treated as a block-level element */
-  margin: 1rem auto 0;     /* Top margin + auto horizontal centering */
+
+  display: block;
+  margin: 1rem auto 0;
 }
 
 .register-form button:hover {
   background: linear-gradient(135deg, #dcb872, #b7925b);
 }
 
-
-
-/* Logo styling */
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+.back-button {
+  margin-top: 20px;
+  background-color: #684a00;
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.logo {
-  width: 140px;
-  height: auto;
-  filter: drop-shadow(0 4px 12px rgba(255, 215, 0, 0.4));
-  animation: fadeIn 1.2s ease-in-out;
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }

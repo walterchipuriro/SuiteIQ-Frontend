@@ -27,8 +27,8 @@ function Welcome() {
       }}
     >
       <img src="/suiteiq_logo.PNG" alt="SuiteIQ Logo" className="logo" />
-      <h1>Welcome to the most luxurious Hotel</h1>
-      <p>Stay Where the City Breathes</p>
+      <h1>SuiteIQ: Redefining Staff Management for Luxury Hospitality</h1>
+      <p>Streamlining Luxury from Within</p>
       <div className="button-group">
         <button onClick={handleLandingPage}>Get Started</button>
       </div>
