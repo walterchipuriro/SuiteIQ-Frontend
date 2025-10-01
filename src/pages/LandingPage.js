@@ -1,16 +1,16 @@
-  import './LandingPage.css'; //
-  import React from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './LandingPage.css';
 
 function LandingPage() {
   const navigate = useNavigate();
 
-
   return (
     <div className="landing-container">
+      {/* Updated Navbar with navigation */}
       <div className="navbar">
+        <button onClick={() => navigate('/register')}>Register</button>
         <button>Login</button>
-        <button>Register</button>
         <button>Contact</button>
       </div>
 
@@ -31,10 +31,7 @@ function LandingPage() {
           We blend intuitive design with powerful features to give you the competitive edge in hospitality.
         </p>
 
-        <button
-          className="back-button"
-          onClick={() => navigate(-1)}  // go back one step in history
-        >
+        <button className="back-button" onClick={() => navigate(-1)}>
           ← Back
         </button>
       </div>
