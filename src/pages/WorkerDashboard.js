@@ -1,21 +1,23 @@
-import WorkerDashboardSidebar from "../components/WorkerDashboardSideBar";
-import WorkerDashboardTopbar from "../components/WorkerDashboardTopBar";
-import WorkerDashboardWorkspace from "../components/WorkerDashboardWorkspace";
+import WorkerSidebar from "../components/WorkerSidebar";
+import WorkerTopbar from "../components/WorkerTopbar";
+import WorkerWelcome from "../components/WorkerWelcome";
+import "./WorkerDashboard.css";
 
-const WorkerDashboard = () => {
+export default function WorkerDashboard() {
   return (
-    <div
-      className="flex flex-col h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('../assets/images/reg.jpeg')" }}
-    >
-      <WorkerDashboardTopbar />
-      <div className="flex flex-1">
-        <WorkerDashboardSidebar />
-        <WorkerDashboardWorkspace />//
+    <div className="workerDashboard-container text-white">
+      <div className="flex h-screen">
+        <WorkerSidebar />
+        <WorkerTopbar />
+
+
+        <div className="flex-1 flex items-center justify-center">
+          {/* Main content here */}
+          <div className="flex-1">
+            <WorkerWelcome />
+          </div>
+        </div>
       </div>
     </div>
-    
   );
-};
-
-export default WorkerDashboard;
+}
